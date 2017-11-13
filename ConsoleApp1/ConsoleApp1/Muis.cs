@@ -4,28 +4,28 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Muis
+    public class Muis
     {
         private bool isLevend;
 
         public Muis()
         {
-            // zet isLevend op true
+            this.isLevend = true;
         }
 
         public void Kill()
         {
-            // zet isLevend op false
+            this.isLevend = false;
         }
 
         public override string ToString()
         {
-            if(this.isLevend)
+            if (this.isLevend == true)
             {
                 return "Nog steeds levend haha!";
             } else
             {
-                return "...";
+                return "Harstikke dood";
             }
         }
     }
